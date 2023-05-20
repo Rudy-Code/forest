@@ -8,10 +8,10 @@ body {
 	font-size: 1.6rem;
 	display: flex;
 	flex-direction: column;
-    background-color: #fff;
-    color: #000;
-    font-weight: 400;
-    overflow-x: hidden;
+	background-color: #fff;
+	color: #000;
+	font-weight: 400;
+	overflow-x: hidden;
 }
 
 a {
@@ -30,4 +30,15 @@ a {
 		align-items: center;
 		height: 100%;
 	}
+
+	&--small{
+		max-width: 960px;
+	}
+}
+
+.section-heading {
+	font-size: 3rem;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
 }
