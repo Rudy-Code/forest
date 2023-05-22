@@ -56,17 +56,17 @@
 	}
 }
 
-@media (min-width: 1000px){
-	&__card {
-		min-width: 280px;
+@media (min-width: 1000px) {
+	.offers {
+		&__card {
+			min-width: 280px;
+		}
 	}
 }
 
-
 @media (min-width: 1040px) {
 	.offers {
-
-		&__info{
+		&__info {
 			margin: 2em 0;
 		}
 
