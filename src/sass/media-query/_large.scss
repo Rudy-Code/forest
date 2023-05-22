@@ -42,12 +42,45 @@
 		height: 330px;
 		background-image: url(../img/girl.jpg);
 		background-attachment: fixed;
-		
-		&__box{
+
+		&__box {
 			padding: 2em;
-			&-heading{
+			&-heading {
 				font-size: 3.3rem;
 			}
+		}
+	}
+
+	.offers {
+		padding: 4em;
+	}
+}
+
+@media (min-width: 1000px){
+	&__card {
+		min-width: 280px;
+	}
+}
+
+
+@media (min-width: 1040px) {
+	.offers {
+
+		&__info{
+			margin: 2em 0;
+		}
+
+		&__card {
+			transition: transform 0.3s;
+
+			&--special {
+				transform: scale(1.1);
+				box-shadow: 0 5px 20px -2px $shadow-card;
+			}
+		}
+
+		&__special {
+			margin-top: 2em;
 		}
 	}
 }
