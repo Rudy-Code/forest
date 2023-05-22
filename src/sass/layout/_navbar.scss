@@ -30,7 +30,11 @@
 	}
 
 	&__logo {
-		font-size: 3rem;
+		font-size: 3.5rem;
+		a{
+			color: #414141;
+			font-weight: 500;
+		}
 	}
 
 	&__links {
@@ -61,20 +65,12 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		//mobile
 		margin: 1em;
-		//end mobile
 		padding: 0 1.2em;
 		color: $black;
-		transition: background-color 0.3s, color 0.3s;
 		cursor: pointer;
 
 		// &.active {
 		// }
-
-		&:hover {
-			background-color: $black;
-			color: $white;
-		}
 	}
 }

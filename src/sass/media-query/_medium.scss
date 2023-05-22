@@ -1,0 +1,84 @@
+@use 'abstracts/colors' as *;
+
+@media (min-width: 768px) {
+	.section-heading {
+		font-size: 4rem;
+		margin-bottom: 0.5em;
+	}
+
+	.nav {
+		height: 90px;
+		.burger-icon {
+			display: none;
+		}
+
+		&__links {
+			display: none;
+
+			&-desktop {
+				display: flex;
+				height: 100%;
+			}
+		}
+
+		&__link {
+			width: 115px;
+			margin: 0;
+			padding: 1.2em;
+			height: 100%;
+			transition: background-color 0.3s, color 0.3s;
+			&.active {
+				color: $white;
+				background-color: $black;
+			}
+			&:hover {
+				background-color: $black;
+				color: $white;
+			}
+		}
+	}
+	.header {
+		height: 400px;
+
+		&__heading {
+			font-size: 2rem;
+		}
+
+		&__text {
+			font-size: 3.5rem;
+			font-weight: 700;
+		}
+	}
+
+	.about {
+		padding: 3em 1.5em;
+
+		&__box {
+			flex-direction: row;
+
+			&-img {
+				width: calc(50% - 2em);
+				// max-height: 340px;
+				margin-right: 2em;
+				display: flex;
+				align-items: center;
+
+				img {
+					max-height: 340px;
+				}
+			}
+
+			&-texts {
+				width: 50%;
+			}
+
+			&-heading {
+				margin: 1.6em 0 0.5em 0;
+			}
+
+			&-text {
+				line-height: 1.8;
+			}
+		}
+	}
+}
