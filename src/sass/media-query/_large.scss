@@ -1,0 +1,86 @@
+@use 'abstracts/colors' as *;
+
+@media (min-width: 992px) {
+	.header {
+		height: 400px;
+		padding: 3em;
+		background-image: url(../img/header.jpg);
+		background-position: 50% 60%;
+		line-height: 1.2;
+		text-align: left;
+
+		&__heading {
+			font-size: 2rem;
+		}
+
+		&__text {
+			font-size: 3.5rem;
+			font-weight: 700;
+		}
+	}
+
+	.about {
+		padding: 3em 1.5em;
+
+		&__box {
+			&-img {
+				width: calc(50% - 4em);
+				margin-right: 4em;
+			}
+
+			&-heading {
+				font-size: 2.8rem;
+			}
+
+			&-text {
+				font-size: 1.8rem;
+			}
+		}
+	}
+
+	.hero {
+		height: 330px;
+		background-image: url(../img/girl.jpg);
+		background-attachment: fixed;
+
+		&__box {
+			padding: 2em;
+			&-heading {
+				font-size: 3.3rem;
+			}
+		}
+	}
+
+	.offers {
+		padding: 4em;
+	}
+}
+
+@media (min-width: 1000px){
+	&__card {
+		min-width: 280px;
+	}
+}
+
+
+@media (min-width: 1040px) {
+	.offers {
+
+		&__info{
+			margin: 2em 0;
+		}
+
+		&__card {
+			transition: transform 0.3s;
+
+			&--special {
+				transform: scale(1.1);
+				box-shadow: 0 5px 20px -2px $shadow-card;
+			}
+		}
+
+		&__special {
+			margin-top: 2em;
+		}
+	}
+}
