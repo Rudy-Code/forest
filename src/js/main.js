@@ -31,15 +31,33 @@ const handleNav = () => {
 
 navBtn.addEventListener('click', handleNav)
 
-const options = {
-	threshold: [0.5, 0.9],
-	rootMargin: '-49px',
+let options = {
+	threshold: [0.6, 0.95],
+	rootMargin: '-100px',
+}
+
+const screenWidth = window.innerWidth
+
+if (screenWidth < 900) {
+	// Opcje dla urządzeń o szerokości mniejszej niż 768px
+	options = {
+		threshold: [0.5, 0.95],
+		rootMargin: '-50px',
+	}
+// } else if(screenWidth > 768) {
+// 	// Opcje dla większych urządzeń
+// 	const options = {
+// 		// ...
+// 	}
 }
 
 const handleScrollspy = entries => {
 	let isFirstSectionVisible = true
 
 	entries.forEach(entry => {
+		if (entry.target.id === 'home') {
+			console.log(entry.target.id)
+		}
 		const activeNav = navLinksDesktop.querySelector(`.nav__link[href='#${entry.target.id}']`)
 
 		if (entry.isIntersecting && isFirstSectionVisible) {
