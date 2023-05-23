@@ -8,7 +8,8 @@
 
 	.nav {
 		height: 90px;
-		.burger-icon {
+
+		.hamburger {
 			display: none;
 		}
 
@@ -27,11 +28,8 @@
 			padding: 1.2em;
 			height: 100%;
 			transition: background-color 0.3s, color 0.3s;
+			&:hover,
 			&.active {
-				color: $white;
-				background-color: $black;
-			}
-			&:hover {
 				background-color: $black;
 				color: $white;
 			}
