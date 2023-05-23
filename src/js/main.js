@@ -31,33 +31,58 @@ const handleNav = () => {
 
 navBtn.addEventListener('click', handleNav)
 
+// !scrollspy
+
+// const scrollSpy = () => {
+// 	const currentSection = window.scrollY;
+// 	const screenHeight = window.innerHeight;
+// 	const onevh = screenHeight / 100;
+// 	sections.forEach(section => {
+// 		let id = section.getAttribute('id');
+		
+// 		if (
+			
+// 			section.offsetTop <= currentSection + nav.clientHeight + onevh * 27.7
+// 		) {
+// 			allNavLinksDesktop.forEach(link => {
+// 				link.classList.remove('active');
+// 				console.log(navLinksDesktop.querySelector(`.nav_link[href='#${id}']`));
+// 				navLinksDesktop.querySelector(`.nav__link[href='#${id}']`)
+// 				// document.querySelector(`.nav__mobile-link[href*=${id}]`).classList.add('active');
+// 			});
+// 		}
+// 	});
+// };
+
+// window.addEventListener('scroll', scrollSpy)
+
 let options = {
-	threshold: [0.6, 0.95],
-	rootMargin: '-100px',
+	threshold: [0.5, 0.9],
+	rootMargin: '-51px',
 }
 
 const screenWidth = window.innerWidth
+const screenHeight = window.innerHeight
 
 if (screenWidth < 900) {
-	// Opcje dla urządzeń o szerokości mniejszej niż 768px
 	options = {
-		threshold: [0.5, 0.95],
-		rootMargin: '-50px',
+		threshold: [0.5, 0.9],
+		rootMargin: '-1px',
 	}
-// } else if(screenWidth > 768) {
-// 	// Opcje dla większych urządzeń
-// 	const options = {
-// 		// ...
-// 	}
 }
+
+// if (screenHeight > 1300) {
+// 	// Opcje dla urządzeń o szerokości mniejszej niż 768px
+// 	options = {
+// 		threshold: [0.6, 0.99],
+// 		rootMargin: '-20px',
+// 	}
+// }
 
 const handleScrollspy = entries => {
 	let isFirstSectionVisible = true
 
 	entries.forEach(entry => {
-		if (entry.target.id === 'home') {
-			console.log(entry.target.id)
-		}
 		const activeNav = navLinksDesktop.querySelector(`.nav__link[href='#${entry.target.id}']`)
 
 		if (entry.isIntersecting && isFirstSectionVisible) {
