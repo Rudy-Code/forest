@@ -6,7 +6,7 @@ const navLinksDesktop = document.querySelector('.nav__links-desktop')
 const allNavLinksDesktop = navLinksDesktop.querySelectorAll('.nav__link')
 
 // spy scroll
-const sections = document.querySelectorAll('.section')
+const sectionsSpy = document.querySelectorAll('.section')
 const headerSection = document.querySelector('.header')
 
 //  menu
@@ -33,72 +33,27 @@ navBtn.addEventListener('click', handleNav)
 
 // !scrollspy
 
-// const scrollSpy = () => {
-// 	const currentSection = window.scrollY;
-// 	const screenHeight = window.innerHeight;
-// 	const onevh = screenHeight / 100;
-// 	sections.forEach(section => {
-// 		let id = section.getAttribute('id');
-		
-// 		if (
-			
-// 			section.offsetTop <= currentSection + nav.clientHeight + onevh * 27.7
-// 		) {
-// 			allNavLinksDesktop.forEach(link => {
-// 				link.classList.remove('active');
-// 				console.log(navLinksDesktop.querySelector(`.nav_link[href='#${id}']`));
-// 				navLinksDesktop.querySelector(`.nav__link[href='#${id}']`)
-// 				// document.querySelector(`.nav__mobile-link[href*=${id}]`).classList.add('active');
-// 			});
-// 		}
-// 	});
-// };
+const handleScrollSpy = () => {
+	if (document.body.classList.contains('main-page')) {
+		const sections = []
 
-// window.addEventListener('scroll', scrollSpy)
+		sectionsSpy.forEach(section => {
+			if (window.scrollY <= section.offsetTop + section.offsetHeight - 90) {
+				sections.push(section)
 
-let options = {
-	threshold: [0.6, 0.9],
-	rootMargin: '-100px',
-}
+				const activeSection = navLinksDesktop.querySelector(`.nav__link[href*="${sections[0].id}"]`)
+				console.log(navLinksDesktop.querySelector(`.nav__link[href*="${sections[0].id}"]`))
 
-const screenWidth = window.innerWidth
-const screenHeight = window.innerHeight
+				allNavLinksDesktop.forEach(item => item.classList.remove('active'))
 
-if (screenWidth < 900) {
-	options = {
-		threshold: [0.5, 0.9],
-		rootMargin: '-1px',
+				activeSection.classList.add('active')
+			}
+		})
 	}
 }
 
-if (screenHeight > 1300) {
-	options = {
-		threshold: [0.8, 0.9],
-		rootMargin: '-40px',
-	}
-}
+window.addEventListener('scroll', handleScrollSpy)
 
-const handleScrollspy = entries => {
-	let isFirstSectionVisible = true
-
-	entries.forEach(entry => {
-		const activeNav = navLinksDesktop.querySelector(`.nav__link[href='#${entry.target.id}']`)
-
-		if (entry.isIntersecting && isFirstSectionVisible) {
-			allNavLinksDesktop.forEach(link => {
-				link.classList.remove('active')
-			})
-			activeNav.classList.add('active')
-			isFirstSectionVisible = false
-		}
-	})
-}
-
-const observer = new IntersectionObserver(handleScrollspy, options)
-
-sections.forEach(section => {
-	observer.observe(section)
-})
 
 // !offers
 
