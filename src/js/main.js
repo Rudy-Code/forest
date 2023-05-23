@@ -33,7 +33,7 @@ navBtn.addEventListener('click', handleNav)
 
 const options = {
 	threshold: [0.5, 0.9],
-	rootMargin: '-80px',
+	rootMargin: '-49px',
 }
 
 const handleScrollspy = entries => {
@@ -56,4 +56,28 @@ const observer = new IntersectionObserver(handleScrollspy, options)
 
 sections.forEach(section => {
 	observer.observe(section)
+})
+
+// !offers
+
+const offersBox = document.querySelector('.offers__box')
+const offersCards = document.querySelectorAll('.offers__card')
+const offersBtn = document.querySelectorAll('.offers__card-btn')
+
+const handleOffers = e => {
+	const btn = e.querySelector('.offers__card-btn')
+	offersCards.forEach(card => {
+		card.classList.remove('offers__card--special')
+	})
+	offersBtn.forEach(btn => {
+		btn.classList.remove('offers__card-btn--special')
+	})
+
+	btn.classList.add('offers__card-btn--special')
+	e.classList.add('offers__card--special')
+}
+
+offersCards.forEach(card => {
+	card.addEventListener('mouseenter', () => handleOffers(card))
+	card.addEventListener('mouseleave', () => handleOffers(offersCards[1]))
 })
