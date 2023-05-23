@@ -57,8 +57,8 @@ navBtn.addEventListener('click', handleNav)
 // window.addEventListener('scroll', scrollSpy)
 
 let options = {
-	threshold: [0.5, 0.9],
-	rootMargin: '-51px',
+	threshold: [0.6, 0.9],
+	rootMargin: '-100px',
 }
 
 const screenWidth = window.innerWidth
@@ -71,13 +71,12 @@ if (screenWidth < 900) {
 	}
 }
 
-// if (screenHeight > 1300) {
-// 	// Opcje dla urządzeń o szerokości mniejszej niż 768px
-// 	options = {
-// 		threshold: [0.6, 0.99],
-// 		rootMargin: '-20px',
-// 	}
-// }
+if (screenHeight > 1300) {
+	options = {
+		threshold: [0.8, 0.9],
+		rootMargin: '-40px',
+	}
+}
 
 const handleScrollspy = entries => {
 	let isFirstSectionVisible = true
