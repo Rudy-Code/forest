@@ -9,7 +9,7 @@ const allNavLinksDesktop = navLinksDesktop.querySelectorAll('.nav__link')
 const sectionsSpy = document.querySelectorAll('.section')
 const headerSection = document.querySelector('.header')
 
-//  menu
+//  ** menu
 const handleNav = () => {
 	navBtn.classList.toggle('is-active')
 	navLinks.classList.toggle('nav__links--active')
@@ -31,7 +31,7 @@ const handleNav = () => {
 
 navBtn.addEventListener('click', handleNav)
 
-// !scrollspy
+// **scrollspy
 
 const handleScrollSpy = () => {
 	if (document.body.classList.contains('main-page')) {
@@ -42,20 +42,21 @@ const handleScrollSpy = () => {
 				sections.push(section)
 
 				const activeSection = navLinksDesktop.querySelector(`.nav__link[href*="${sections[0].id}"]`)
-				console.log(navLinksDesktop.querySelector(`.nav__link[href*="${sections[0].id}"]`))
-
 				allNavLinksDesktop.forEach(item => item.classList.remove('active'))
 
 				activeSection.classList.add('active')
 			}
 		})
+	} else if (document.body.classList.contains('contact-page')) {
+		const section = navLinksDesktop.querySelector(`.nav__link[href="contact.html"`)
+		section.classList.add('active')
 	}
 }
 
 window.addEventListener('scroll', handleScrollSpy)
+handleScrollSpy()
 
-
-// !offers
+// **offers
 
 const offersBox = document.querySelector('.offers__box')
 const offersCards = document.querySelectorAll('.offers__card')
@@ -78,3 +79,29 @@ offersCards.forEach(card => {
 	card.addEventListener('mouseenter', () => handleOffers(card))
 	card.addEventListener('mouseleave', () => handleOffers(offersCards[1]))
 })
+
+// ** form
+
+if (document.body.classList.contains('contact-page')) {
+	const handleLabelText = e => {
+		e.value != '' ? e.classList.add('text') : e.classList.remove('text')
+	}
+
+	const resetForm = () => {
+		inputs.forEach(input => input.classList.remove('text'))
+	}
+
+	const inputs = document.querySelectorAll('.input')
+	const reset = document.querySelector('#reset')
+
+	inputs.forEach(input => {
+		input.addEventListener('focus', () => {
+			handleLabelText(input)
+		})
+		input.addEventListener('input', () => {
+			handleLabelText(input)
+		})
+	})
+
+	reset.addEventListener('click', resetForm)
+}

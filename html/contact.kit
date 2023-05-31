@@ -9,17 +9,62 @@
     <meta name="description" content="">
 
 
-
-    <script src="https://kit.fontawesome.com/58309639ce.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="dist/css/style.min.css">
+    <!-- @include 'head.kit' -->
 </head>
 
 
-<body>
+<body class="contact-page">
 
-   <!-- @include 'nav.kit' -->
+    <!-- @include 'nav.kit' -->
+
+    <section id="" class="contact section">
+
+        <div class="wrapper">
+            <h2 class="section-heading">Kontakt i mapa dojazdu</h2>
+
+            <div class="contact__box">
 
 
+                <form class="contact__form">
+
+                    <div class="contact__form-box">
+                        <input type="text" id="name" class="input" required>
+                        <label for="name">Imię</label>
+                    </div>
+                    <div class="contact__form-box">
+                        <input type="text" id="surname" class="input">
+                        <label for="surname">Nazwisko</label>
+                    </div>
+                    <div class="contact__form-box">
+                        <input type="email" id="email" class="input" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="contact__form-box">
+                        <textarea name="message" id="message" class="input" cols="30" rows="10" required></textarea>
+                        <label for="message">Wiadomość</label>
+                    </div>
+                    <div class="contact__form-box--privacy">
+                        <input type="checkbox" id="privacy-policy" required>
+                        <label for="privacy-policy">Zgoda na przetwarzanie danych osobowych</label>
+                    </div>
+
+                    <div class="contact__form-btns">
+                        <button type="submit" id="send">Wyślij</button>
+                        <button type="reset" id="reset">Wyczyść</button>
+                    </div>
+
+                </form>
+
+                <div class="contact__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5119.796913480284!2d19.892849!3d50.088188!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1684966892011!5m2!1spl!2spl"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <!-- @include 'footer.kit' -->
 
