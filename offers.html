@@ -9,6 +9,8 @@
     <meta name="description" content="">
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,12 +18,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
     <script src="https://kit.fontawesome.com/58309639ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="dist/css/style.min.css">
+
 </head>
 
 
 <body class="main-page">
 
-   <nav class="nav">
+    <nav class="nav">
     <div class="wrapper wrapper--nav">
         <div class="nav__logo">
             <a href="index.html#home">
@@ -50,19 +53,96 @@
     </div>
 </nav>
 
-   <section id="offers" class="offers">
-    <h2>edienud</h2>
-    <p>deded</p>
-    <p>deded</p>
-    <p>deded</p>
-    <p>deded</p>
-    <p>deded</p>
-    <p>deded</p>
-    <p>deded</p>
-    <p>deded</p>
-    <p>deded</p>
-    <p>deded</p>
-   </section>
+    <section class="swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <h2>Szkoła</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, esse! </p>
+                    </div>
+                    <img src="dist/img/swiper/school.jpg" alt="Slide 1" class="special img-desktop">
+                    <img src="dist/img/swiper/school-mini.jpg" alt="Slide 1" class="img-mobile">
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <h2>Biznes Plan</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, alias.</p>
+                    </div>
+                    <img src="dist/img/swiper/restaurant.jpg" alt="Slide 2" class="special-restaurant img-desktop">
+                    <img src="dist/img/swiper/restaurant-mini.jpg" alt="Slide 2" class="img-mobile">
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <h2>Szkoła Premium</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, et.</p>
+                    </div>
+                    <img src="dist/img/swiper/school-premium.jpg" alt="Slide 3" class="img-desktop">
+                    <img src="dist/img/swiper/school-premium-mini.jpg" alt="Slide 3" class="img-mobile">
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <h2>Specjalne Eventy</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, qui.</p>
+                    </div>
+                    <img src="dist/img/swiper/starwars.jpg" alt="Slide 4" class="img-desktop">
+                    <img src="dist/img/swiper/starwars-mini.jpg" alt="Slide 4" class="img-mobile">
+                </div>
+            </div>
+            <button class="swiper-button swiper-button-prev"></button>
+            <button class="swiper-button swiper-button-next"></button>
+        </div>
+    </section>
+
+    <section id="offers" class="offers section">
+        <div class="wrapper wrapper--small">
+            <h2 class="section-heading">Oferty Specjalne</h2>
+            <p class="offers__info">Wybierz specjalna oferte na specjalną okazję</p>
+
+            <div class="offers__box">
+                <div class="offers__card">
+                    <h3 class="offers__card-name">Szkoła</h3>
+                    <p class="offers__card-price">$70</p>
+                    <div class="offers__card-features">
+                        <p class="offers__card-feature"><i class="ti ti-check"></i> opcja w pakiecie</p>
+                        <p class="offers__card-feature"><i class="ti ti-check"></i> opcja w pakiecie</p>
+                        <p class="offers__card-feature"><i class="ti ti-check"></i> opcja w pakiecie</p>
+                        <p class="offers__card-feature offers__card-feature--none"><i class="ti ti-minus"></i>
+                            </i> opcja poza pakietem</p>
+                        <p class="offers__card-feature offers__card-feature--none"><i class="ti ti-minus"></i>
+                            </i> opcja poza pakietem</p>
+                    </div>
+                    <button class="offers__card-btn">Wybierz</button>
+                </div>
+                <div class="offers__card offers__card--special">
+                    <h3 class="offers__card-name">Biznes Plan</h3>
+                    <p class="offers__card-price">$300</p>
+                    <div class="offers__card-features">
+                        <p class="offers__card-feature"><i class="ti ti-check"></i> opcja w pakiecie</p>
+                        <p class="offers__card-feature"><i class="ti ti-check"></i> opcja w pakiecie</p>
+                        <p class="offers__card-feature"><i class="ti ti-check"></i> opcja w pakiecie</p>
+                        <p class="offers__card-feature"><i class="ti ti-check"></i> opcja w pakiecie</p>
+                        <p class="offers__card-feature"><i class="ti ti-check"></i> opcja w pakiecie</p>
+                    </div>
+                    <button class="offers__card-btn offers__card-btn--special">Wybierz</button>
+                </div>
+                <div class="offers__card">
+                    <h3 class="offers__card-name">Urodziny</h3>
+                    <p class="offers__card-price">$200</p>
+                    <div class="offers__card-features">
+                        <p class="offers__card-feature"><i class="ti ti-check"></i> opcja w pakiecie</p>
+                        <p class="offers__card-feature"><i class="ti ti-check"></i> opcja w pakiecie</p>
+                        <p class="offers__card-feature"><i class="ti ti-check"></i> opcja w pakiecie</p>
+                        <p class="offers__card-feature"><i class="ti ti-check"></i> opcja w pakiecie</p>
+                        <p class="offers__card-feature offers__card-feature--none"><i class="ti ti-minus"></i>
+                            </i> opcja poza pakietem</p>
+                    </div>
+                    <button class="offers__card-btn">Wybierz</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <footer class="footer">
@@ -95,8 +175,9 @@
     <p class="footer__rights-text"> &copy; <span class="footer__rights-year"> 2023 </span> Forest Group Company Ltd.
     </p>
 </footer>
-
     <script src="dist/js/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="dist/js/swiper.min.js"></script>
 </body>
 
 </html>

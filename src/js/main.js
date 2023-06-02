@@ -47,10 +47,7 @@ const handleScrollSpy = () => {
 				activeSection.classList.add('active')
 			}
 		})
-	} else if (document.body.classList.contains('contact-page')) {
-		const section = navLinksDesktop.querySelector(`.nav__link[href="contact.html"`)
-		section.classList.add('active')
-	}
+	} 
 }
 
 window.addEventListener('scroll', handleScrollSpy)
