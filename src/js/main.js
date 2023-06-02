@@ -9,6 +9,11 @@ const allNavLinksDesktop = navLinksDesktop.querySelectorAll('.nav__link')
 const sectionsSpy = document.querySelectorAll('.section')
 const headerSection = document.querySelector('.header')
 
+// offers
+const offersBox = document.querySelector('.offers__box')
+const offersCards = document.querySelectorAll('.offers__card')
+const offersBtn = document.querySelectorAll('.offers__card-btn')
+
 //  ** menu
 const handleNav = () => {
 	navBtn.classList.toggle('is-active')
@@ -47,17 +52,13 @@ const handleScrollSpy = () => {
 				activeSection.classList.add('active')
 			}
 		})
-	} 
+	}
 }
 
 window.addEventListener('scroll', handleScrollSpy)
 handleScrollSpy()
 
 // **offers
-
-const offersBox = document.querySelector('.offers__box')
-const offersCards = document.querySelectorAll('.offers__card')
-const offersBtn = document.querySelectorAll('.offers__card-btn')
 
 const handleOffers = e => {
 	const btn = e.querySelector('.offers__card-btn')

@@ -20,3 +20,12 @@ const mySwiper = new Swiper('.swiper-container', {
 		},
 	},
 })
+
+const goToOffersBtn = document.querySelectorAll('.go-offers-btn')
+const offersSection = document.querySelector('#offers')
+
+goToOffersBtn.forEach(btn =>
+	btn.addEventListener('click', () => {
+		offersSection.scrollIntoView()
+	})
+)

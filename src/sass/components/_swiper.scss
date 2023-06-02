@@ -69,6 +69,24 @@
 		font-weight: 300;
 		letter-spacing: 1px;
 	}
+
+	.go-offers-btn {
+		display: inline-block;
+		padding: 0.8em 1.6em;
+		background-color: transparent;
+		border: 1px solid #fff;
+		border-radius: 8px;
+		font-size: 1.4rem;
+		transition: background-color 0.3s, color 0.3s;
+		margin-top: 2em;
+		color: $white;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #fff;
+			color: $swiper;
+		}
+	}
 }
 
 .swiper-button {
@@ -92,6 +110,14 @@
 	&-prev {
 		&::after {
 			margin-left: -3px;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.slide-content {
+		.go-offers-btn {
+			font-size: 2rem;
 		}
 	}
 }
