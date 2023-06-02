@@ -14,6 +14,9 @@ const offersBox = document.querySelector('.offers__box')
 const offersCards = document.querySelectorAll('.offers__card')
 const offersBtn = document.querySelectorAll('.offers__card-btn')
 
+const scrollToTopBtn = document.querySelector('.scroll-to-top')
+
+
 //  ** menu
 const handleNav = () => {
 	navBtn.classList.toggle('is-active')
@@ -34,7 +37,6 @@ const handleNav = () => {
 	})
 }
 
-navBtn.addEventListener('click', handleNav)
 
 // **scrollspy
 
@@ -55,8 +57,6 @@ const handleScrollSpy = () => {
 	}
 }
 
-window.addEventListener('scroll', handleScrollSpy)
-handleScrollSpy()
 
 // **offers
 
@@ -103,3 +103,29 @@ if (document.body.classList.contains('contact-page')) {
 
 	reset.addEventListener('click', resetForm)
 }
+
+
+
+const handleWidthScrollBar = () => {
+	const scroll = window.scrollY
+	const maxScroll = document.body.offsetHeight - window.innerHeight
+
+	const scrollBarWidth = Math.floor((scroll / maxScroll) * 100)
+
+	if (scrollBarWidth > 75) scrollToTopBtn.classList.add('scroll-to-top--visible')
+	else scrollToTopBtn.classList.remove('scroll-to-top--visible')
+}
+
+const scrollToTop = () => {
+	window.scroll({
+		top: 0,
+		behavior: 'smooth',
+	})
+}
+
+navBtn.addEventListener('click', handleNav)
+window.addEventListener('scroll', handleScrollSpy)
+handleScrollSpy()
+
+window.addEventListener('scroll', handleWidthScrollBar)
+scrollToTopBtn.addEventListener('click', scrollToTop)
