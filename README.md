@@ -27,7 +27,7 @@ Forest is the first site I have coded on my own. My task was to replicate the si
 - [x] Add Cookies baner
 - [x] Split style files into smaller ones
 - [ ] Change the remaining px to em
-- [ ] Add Animations on scroll
+- [x] Add Animations on scroll
 - [ ] Add Validation form
 - [x] Change meta tags and title
 
@@ -43,6 +43,9 @@ https://rudydev1.github.io/forest/
 - 1.0.1
   - Split style files into smaller ones
   - Change meta tags and title
+- 1.1.0
+  - Add Animations on scroll
+  - Add scroll padding
 ## Credits
 
 The task to be completed and the mockup of the page is from the MMC SCHOOL course: [Kurs Tworzenia Stron WWW cz. 4](https://mmcschool.teachable.com/p/kurs-tworzenia-stron-www-cz-4)

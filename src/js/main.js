@@ -14,9 +14,6 @@ const offersBox = document.querySelector('.offers__box')
 const offersCards = document.querySelectorAll('.offers__card')
 const offersBtn = document.querySelectorAll('.offers__card-btn')
 
-
-
-
 //  ** menu
 const handleNav = () => {
 	navBtn.classList.toggle('is-active')
@@ -37,8 +34,7 @@ const handleNav = () => {
 	})
 }
 
-
-// **scrollspy
+// ** scrollspy
 
 const handleScrollSpy = () => {
 	if (document.body.classList.contains('main-page')) {
@@ -57,8 +53,7 @@ const handleScrollSpy = () => {
 	}
 }
 
-
-// **offers
+// ** offers
 
 const handleOffers = e => {
 	const btn = e.querySelector('.offers__card-btn')
@@ -104,6 +99,43 @@ if (document.body.classList.contains('contact-page')) {
 	reset.addEventListener('click', resetForm)
 }
 
+// ** animations on scroll - intersection observer
+
+const animationsElements = document.querySelectorAll('.animate-on-scroll, .animate-top-down, .animate-down-top')
+
+const observer = new IntersectionObserver(
+	entries => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('animate')
+				if (entry.target.classList.contains('animate-down-top--special')) entry.target.classList.add('animate--special')
+
+				// delete classes and observer after animation
+				setTimeout(() => {
+					entry.target.classList.remove(
+						'animate',
+						'animate--special',
+						'animate-on-scroll',
+						'animate-top-down',
+						'animate-down-top',
+						'animate-down-top--special'
+					)
+					observer.unobserve(entry.target)
+				}, 1000)
+			}
+		})
+	},
+	// computer threshold
+	{
+		threshold: numberThreshold,
+	}
+)
+
+const numberThreshold = window.matchMedia('(max-width: 768px)').matches ? 0.1 : 0.5
+
+animationsElements.forEach(el => observer.observe(el))
+
 navBtn.addEventListener('click', handleNav)
+
 window.addEventListener('scroll', handleScrollSpy)
 handleScrollSpy()

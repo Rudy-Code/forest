@@ -1,6 +1,7 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+	scroll-padding-top: 78px;
 }
 
 body {
@@ -26,11 +27,11 @@ a {
 	text-transform: uppercase;
 }
 
-.scroll-to-top{
+.scroll-to-top {
 	display: none;
 	position: fixed;
 	bottom: 2em;
-	right: .2em;
+	right: 0.2em;
 	width: 2em;
 	height: 2em;
 	border-radius: 50%;
@@ -42,11 +43,11 @@ a {
 	transition: background-color 0.3s;
 	cursor: pointer;
 
-	&:hover{
+	&:hover {
 		background-color: #333;
 	}
 
-	&--visible{
+	&--visible {
 		display: flex;
 	}
 }
