@@ -25,6 +25,7 @@ Forest is the first site I have coded on my own. My task was to replicate the si
 ## To do
 
 - [x] Add Cookies baner
+- [x] Split style files into smaller ones
 - [ ] Change the remaining px to em
 - [ ] Add Animations on scroll
 - [ ] Add Validation form
