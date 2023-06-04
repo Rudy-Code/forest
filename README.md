@@ -35,13 +35,16 @@ Forest is the first site I have coded on my own. My task was to replicate the si
 
 https://rudydev1.github.io/forest/
 
-## Credits
-
-The task to be completed and the mockup of the page is from the MMC SCHOOL course: [Kurs Tworzenia Stron WWW cz. 4](https://mmcschool.teachable.com/p/kurs-tworzenia-stron-www-cz-4)
 
 ## Version History
 
 - 1.0.0
   - Initial Release
+- 1.0.1
+  - Split style files into smaller ones
+  - Change meta tags and title
+## Credits
+
+The task to be completed and the mockup of the page is from the MMC SCHOOL course: [Kurs Tworzenia Stron WWW cz. 4](https://mmcschool.teachable.com/p/kurs-tworzenia-stron-www-cz-4)
 
 [product-screenshot]: dist/img/img.png
