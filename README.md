@@ -6,6 +6,10 @@
 - [Description](#description)
 - [Technologies used](#technologies-used)
 - [To do](#to-do)
+- [Live](#live)
+- [Credits](#credits)
+- [Version History](#version-history)
+
 
 
 ## Description
