@@ -107,6 +107,7 @@
 		text-align: center;
 
 		&-link {
+			display: block;
 			position: relative;
 			padding: 0.2em 0.1em;
 			font-weight: 600;
@@ -130,6 +131,16 @@
 				&::after {
 					height: 100%;
 				}
+			}
+		}
+	}
+}
+
+@media (min-width: 375px) {
+	.offers {
+		&__special {
+			&-link {
+				display: inline;
 			}
 		}
 	}
