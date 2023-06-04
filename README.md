@@ -30,7 +30,7 @@ Forest is the first site I have coded on my own. My task was to replicate the si
 - [x] Add Cookies baner
 - [ ] Add Animations on scroll
 - [ ] Add Validation form
-- [ ] Add 
+- [ ] Change meta tags and title
 
 ## Live
 
