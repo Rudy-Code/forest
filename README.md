@@ -29,7 +29,7 @@ Forest is the first site I have coded on my own. My task was to replicate the si
 - [ ] Change the remaining px to em
 - [ ] Add Animations on scroll
 - [ ] Add Validation form
-- [ ] Change meta tags and title
+- [x] Change meta tags and title
 
 ## Live
 
