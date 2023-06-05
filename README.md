@@ -54,6 +54,9 @@ https://rudydev1.github.io/forest/
 - 1.1.2
   - Fixed bug sroll in mobile menu
   - Changed size arrow scroll to top
+- 1.1.3
+  - Fixed link svg in mobile menu
+  - Changed alt in img
 ## Credits
 
 The task to be completed and the mockup of the page is from the MMC SCHOOL course: [Kurs Tworzenia Stron WWW cz. 4](https://mmcschool.teachable.com/p/kurs-tworzenia-stron-www-cz-4)
