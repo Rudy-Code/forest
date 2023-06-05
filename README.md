@@ -7,7 +7,7 @@
 - [To do](#to-do)
 - [Live](#live)
 - [Version History](#version-history)
-- [Special Thanks](#special-thanks)
+- [Special Thanks](#special-thanks-to)
 - [Credits](#credits)
 
 ## Description
