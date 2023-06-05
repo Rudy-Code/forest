@@ -51,6 +51,9 @@ https://rudydev1.github.io/forest/
   - Deleted animation in contact page
   - Deleted font awasome and replace with svg
   - fixed bugs
+- 1.1.2
+  - Fixed bug sroll in mobile menu
+  - Changed size arrow scroll to top
 ## Credits
 
 The task to be completed and the mockup of the page is from the MMC SCHOOL course: [Kurs Tworzenia Stron WWW cz. 4](https://mmcschool.teachable.com/p/kurs-tworzenia-stron-www-cz-4)
