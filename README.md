@@ -46,6 +46,11 @@ https://rudydev1.github.io/forest/
 - 1.1.0
   - Add Animations on scroll
   - Add scroll padding
+- 1.1.1
+  - Deleted animation in mobile
+  - Deleted animation in contact page
+  - Deleted font awasome and replace with svg
+  - fixed bugs
 ## Credits
 
 The task to be completed and the mockup of the page is from the MMC SCHOOL course: [Kurs Tworzenia Stron WWW cz. 4](https://mmcschool.teachable.com/p/kurs-tworzenia-stron-www-cz-4)
