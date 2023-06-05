@@ -4,7 +4,7 @@
 
 - [Description](#description)
 - [Technologies used](#technologies-used)
-- [Todo](#to-do)
+- [Todo](#todo)
 - [Live](#live)
 - [Version History](#version-history)
 - [Special Thanks](#special-thanks-to)
