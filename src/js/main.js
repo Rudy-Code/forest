@@ -30,6 +30,7 @@ const handleNav = () => {
 			navBtn.classList.remove('is-active')
 			navLinks.classList.remove('nav__links--active')
 			document.body.classList.remove('sticky-body')
+			document.body.style.overflow = 'auto'
 		})
 	})
 }
