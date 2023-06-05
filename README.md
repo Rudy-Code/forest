@@ -6,8 +6,9 @@
 - [Technologies used](#technologies-used)
 - [To do](#to-do)
 - [Live](#live)
-- [Credits](#credits)
 - [Version History](#version-history)
+- [Special Thanks](#special-thanks)
+- [Credits](#credits)
 
 ## Description
 
@@ -33,8 +34,8 @@ Forest is the first site I have coded on my own. My task was to replicate the si
 
 ## Live
 
-https://rudydev1.github.io/forest/
-
+- https://rudydev1.github.io/forest/
+- https://rudydev-forest.netlify.app/
 
 ## Version History
 
@@ -57,6 +58,15 @@ https://rudydev1.github.io/forest/
 - 1.1.3
   - Fixed link svg in mobile menu
   - Changed alt in img
+
+## Special thanks to
+
+- **David**: For his help with color testing and ensuring the linguistic accuracy of the texts.
+- **Kacper**: For helping to identify and fix errors on the site.
+- **Anna**: For providing valuable visual evaluation of the entire site.
+
+I would like to express my sincere gratitude for your contribution and support throughout the project. Your expertise and efforts greatly helped in the development of the website. Thank you!
+
 ## Credits
 
 The task to be completed and the mockup of the page is from the MMC SCHOOL course: [Kurs Tworzenia Stron WWW cz. 4](https://mmcschool.teachable.com/p/kurs-tworzenia-stron-www-cz-4)
