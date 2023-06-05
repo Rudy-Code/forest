@@ -74,32 +74,6 @@ offersCards.forEach(card => {
 	card.addEventListener('mouseleave', () => handleOffers(offersCards[1]))
 })
 
-// ** form
-
-if (document.body.classList.contains('contact-page')) {
-	const handleLabelText = e => {
-		e.value != '' ? e.classList.add('text') : e.classList.remove('text')
-	}
-
-	const resetForm = () => {
-		inputs.forEach(input => input.classList.remove('text'))
-	}
-
-	const inputs = document.querySelectorAll('.input')
-	const reset = document.querySelector('#reset')
-
-	inputs.forEach(input => {
-		input.addEventListener('focus', () => {
-			handleLabelText(input)
-		})
-		input.addEventListener('input', () => {
-			handleLabelText(input)
-		})
-	})
-
-	reset.addEventListener('click', resetForm)
-}
-
 // ** animations on scroll - intersection observer
 
 const animationsElements = document.querySelectorAll('.animate-on-scroll, .animate-top-down, .animate-down-top')

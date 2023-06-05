@@ -30,24 +30,34 @@
                 <form class="contact__form">
 
                     <div class="contact__form-box">
-                        <input type="text" id="name" class="input" required>
+                        <input type="text" id="name" class="input" data-error-text="Imię">
                         <label for="name"><i class="ti ti-user"></i> Imię</label>
+                        <p class="error-text error-text--margin">error</p>
+
                     </div>
                     <div class="contact__form-box">
-                        <input type="text" id="surname" class="input">
+                        <input type="text" id="surname" class="input" data-error-text="Nazwisko">
                         <label for="surname"><i class="ti ti-users"></i> Nazwisko</label>
+                        <p class="error-text error-text--margin">error</p>
+
                     </div>
                     <div class="contact__form-box">
-                        <input type="email" id="email" class="input" required>
+                        <input type="email" id="email" class="input" data-error-text="Email">
                         <label for="email"><i class="ti ti-mail"></i> Email</label>
+                        <p class="error-text error-text--margin">error</p>
+
                     </div>
                     <div class="contact__form-box">
-                        <textarea name="message" id="message" class="input" cols="30" rows="10" required></textarea>
+                        <textarea name="message" id="message" class="input" cols="30" rows="10" data-error-text="Napisz wiadomość"></textarea>
                         <label for="message"><i class="ti ti-message"></i> Wiadomość</label>
+                        <p class="error-text">error</p>
+
                     </div>
                     <div class="contact__form-box--privacy">
-                        <input type="checkbox" id="privacy-policy" required>
+                        <input type="checkbox" id="privacy-policy" data-error-text="Zaakceptuj">
                         <label for="privacy-policy">Zgoda na przetwarzanie danych osobowych</label>
+                        <p class="error-text">error</p>
+
                     </div>
 
                     <div class="contact__form-btns">
@@ -77,6 +87,7 @@
 
     <script src="dist/js/main.min.js"></script>
     <script src="dist/js/cookies.min.js"></script>
+    <script src="dist/js/form.min.js"></script>
 </body>
 
 </html>
