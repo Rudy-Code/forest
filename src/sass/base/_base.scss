@@ -26,28 +26,3 @@ a {
 	text-align: center;
 	text-transform: uppercase;
 }
-
-.scroll-to-top {
-	display: none;
-	position: fixed;
-	bottom: 2em;
-	right: 0.2em;
-	width: 2em;
-	height: 2em;
-	border-radius: 50%;
-	background-color: #000;
-	color: #fff;
-	font-size: 2rem;
-	justify-content: center;
-	align-items: center;
-	transition: background-color 0.3s;
-	cursor: pointer;
-
-	&:hover {
-		background-color: #333;
-	}
-
-	&--visible {
-		display: flex;
-	}
-}
