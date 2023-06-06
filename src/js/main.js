@@ -15,6 +15,27 @@ const offersCards = document.querySelectorAll('.offers__card')
 const offersBtn = document.querySelectorAll('.offers__card-btn')
 
 //  ** menu
+
+const handleNavLinksAnimation = () => {
+	let delayTime = 0
+
+	allNavLinksMobile.forEach(item => {
+		item.classList.toggle('nav-links-animation')
+		item.style.animationDelay = `.${delayTime}s`
+		delayTime++
+	})
+}
+
+const deleteAnimation = () => {
+	allNavLinksMobile.forEach(item => {
+		item.addEventListener('click', () => {
+			allNavLinksMobile.forEach(el => {
+				el.classList.remove('nav-links-animation')
+			})
+		})
+	})
+}
+
 const handleNav = () => {
 	navBtn.classList.toggle('is-active')
 	navLinks.classList.toggle('nav__links--active')
@@ -33,6 +54,8 @@ const handleNav = () => {
 			document.body.style.overflow = 'auto'
 		})
 	})
+	handleNavLinksAnimation()
+	deleteAnimation()
 }
 
 // ** scrollspy

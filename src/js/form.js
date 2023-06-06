@@ -86,7 +86,7 @@ const checkErrors = () => {
 			errorCount++
 		}
 	})
-	console.log(errorCount);
+
 	if (errorCount === 0) {
 		popup.classList.add('show-popup')
 		document.body.style.overflow = 'hidden'
@@ -111,7 +111,6 @@ sendBtn.addEventListener('click', e => {
 	checkLength(message, 10)
 	checkPolicy(policy)
 	checkErrors()
-
 })
 
 clearBtn.addEventListener('click', e => {

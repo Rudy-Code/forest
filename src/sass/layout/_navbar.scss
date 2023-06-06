@@ -47,8 +47,7 @@
 		background-color: $white;
 		transform: translateX(102%);
 		font-size: 2.5rem;
-
-		transition: transform 0.3s;
+		transition: transform 0.5s cubic-bezier(0.65, 0.85, 0.36, 1);
 		z-index: 10;
 
 		&--active {
@@ -77,5 +76,18 @@
 			background-color: $black;
 			color: $white;
 		}
+
+		&.nav-links-animation {
+			animation: navLinksAnimation 1s both;
+		}
+	}
+}
+
+@keyframes navLinksAnimation {
+	from {
+		transform: translateX(200%);
+	}
+	to {
+		transform: translateX(0);
 	}
 }
