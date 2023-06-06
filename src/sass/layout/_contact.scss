@@ -132,6 +132,39 @@
 				background-color: $light-green;
 			}
 		}
+
+		//popup
+
+		.popup {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			position: fixed;
+			top: -100%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 600px;
+			height: 200px;
+			color: $black;
+			background-color: $white;
+			border-radius: 8px;
+			border: 2px solid black;
+			transition: top 0.5s;
+
+			p {
+				font-size: 2.5rem;
+			}
+
+			.close {
+				margin: 1em 0;
+				width: 50%;
+			}
+
+			&.show-popup {
+				top: 25%;
+			}
+		}
 	}
 
 	&__map {
