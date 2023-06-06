@@ -31,7 +31,7 @@ Forest is the first site I have coded on my own. My task was to replicate the si
 - [x] Add Animations on scroll
 - [x] Add Validation form
 - [x] Change meta tags and title
-- [ ] Fixed all bugs in contact page
+- [x] Fixed all bugs in contact page
 - [x] Change styles in contact page
 
 ## Live
