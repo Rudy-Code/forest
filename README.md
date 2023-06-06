@@ -73,6 +73,8 @@ I would like to express my sincere gratitude for your contribution and support t
 - 1.2.0
   - Fixed bugs in contact page
   - Changed styles error text in contact page
+- 1.2.1
+  - Added animation in mobile nav
 ## Credits
 
 The task to be completed and the mockup of the page is from the MMC SCHOOL course: [Kurs Tworzenia Stron WWW cz. 4](https://mmcschool.teachable.com/p/kurs-tworzenia-stron-www-cz-4)
