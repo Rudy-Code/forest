@@ -1,6 +1,7 @@
 const username = document.querySelector('#name')
 const surname = document.querySelector('#surname')
 const policy = document.querySelector('#privacy-policy')
+const message = document.querySelector('#message')
 
 const email = document.querySelector('#email')
 const sendBtn = document.querySelector('#send')
@@ -33,23 +34,6 @@ inputs.forEach(input => {
 
 reset.addEventListener('click', resetForm)
 
-// for (let i = 1; i < allInput.length; i++) {
-// 	const formBox = allInput[i]
-// 	formBox.addEventListener('focus', e => {
-// 		const errorText = e.target.parentElement.previousElementSibling.querySelector('.error-text')
-// 		errorText.classList.add('error-text--focused')
-// 	})
-// }
-
-// for (let i = 1; i < allInput.length; i++) {
-// 	const formBox = allInput[i]
-// 	formBox.addEventListener('blur', e => {
-// 		const errorText = e.target.parentElement.previousElementSibling.querySelector('.error-text')
-// 		errorText.classList.remove('error-text--focused')
-
-// 	})
-// }
-
 // ** validate form
 
 const showError = (input, msg) => {
@@ -80,7 +64,7 @@ const checkLength = (input, min) => {
 	if (input.value.length < min) {
 		console.log(input)
 		console.log(input.parentElement.querySelector('.error-text'))
-		showError(input, `${input.dataset.errorText} składa się z min. ${min} znaków`)
+		showError(input, `${input.dataset.errorText} musi składa się z min. ${min} znaków`)
 	}
 }
 
@@ -116,7 +100,6 @@ const checkPolicy = policy => {
 	} else {
 		clearError(policy)
 	}
-
 }
 
 sendBtn.addEventListener('click', e => {
@@ -126,6 +109,7 @@ sendBtn.addEventListener('click', e => {
 	checkLength(username, 2)
 	checkLength(surname, 3)
 	checkMail(email)
+	checkLength(message, 10)
 	checkPolicy(policy)
 	checkErrors()
 })
