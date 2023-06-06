@@ -8,7 +8,14 @@ const sendBtn = document.querySelector('#send')
 const clearBtn = document.querySelector('#reset')
 //
 const popup = document.querySelector('.popup')
-const allInput = document.querySelectorAll('.contact__form input, .contact__form textarea')
+let allInput
+
+document.addEventListener('DOMContentLoaded', () => {
+	allInput = document.querySelectorAll('.contact__form input, .contact__form textarea')
+	allInput.forEach(el => {
+		handleLabelText(el)
+	})
+})
 
 // ** form
 
