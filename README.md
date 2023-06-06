@@ -6,8 +6,8 @@
 - [Technologies used](#technologies-used)
 - [Todo](#todo)
 - [Live](#live)
-- [Version History](#version-history)
 - [Special Thanks](#special-thanks-to)
+- [Version History](#version-history)
 - [Credits](#credits)
 
 ## Description
@@ -29,14 +29,23 @@ Forest is the first site I have coded on my own. My task was to replicate the si
 - [x] Split style files into smaller ones
 - [ ] Change the remaining px to em
 - [x] Add Animations on scroll
-- [ ] Add Validation form
+- [x] Add Validation form
 - [x] Change meta tags and title
+- [] Fixed all bugs in contact page
+- [] Change styles error inputs in contact page
 
 ## Live
 
 - https://rudydev1.github.io/forest/
 - https://rudydev-forest.netlify.app/
 
+## Special thanks to
+
+- **David**: For his help with color testing and ensuring the linguistic accuracy of the texts.
+- **Kacper**: For helping to identify and fix errors on the site.
+- **Anna**: For providing valuable visual evaluation of the entire site.
+
+I would like to express my sincere gratitude for your contribution and support throughout the project. Your expertise and efforts greatly helped in the development of the website. Thank you!
 ## Version History
 
 - 1.0.0
@@ -58,14 +67,9 @@ Forest is the first site I have coded on my own. My task was to replicate the si
 - 1.1.3
   - Fixed link svg in mobile menu
   - Changed alt in img
-
-## Special thanks to
-
-- **David**: For his help with color testing and ensuring the linguistic accuracy of the texts.
-- **Kacper**: For helping to identify and fix errors on the site.
-- **Anna**: For providing valuable visual evaluation of the entire site.
-
-I would like to express my sincere gratitude for your contribution and support throughout the project. Your expertise and efforts greatly helped in the development of the website. Thank you!
+- 1.2-beta
+  - Added validation form
+  - Fixed inputs bug in contact page
 
 ## Credits
 
