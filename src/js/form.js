@@ -62,8 +62,6 @@ const checkForm = input => {
 
 const checkLength = (input, min) => {
 	if (input.value.length < min) {
-		console.log(input)
-		console.log(input.parentElement.querySelector('.error-text'))
 		showError(input, `${input.dataset.errorText} musi składa się z min. ${min} znaków`)
 	}
 }
@@ -112,6 +110,7 @@ sendBtn.addEventListener('click', e => {
 	checkLength(message, 10)
 	checkPolicy(policy)
 	checkErrors()
+
 })
 
 clearBtn.addEventListener('click', e => {

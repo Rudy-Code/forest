@@ -32,16 +32,21 @@
 				.error-text {
 					visibility: hidden;
 					color: #72ff5f;
-					color: #fbff5e;
+					color: $contact-error;
 					transition: margin 0.3s;
 
+					&--margin {
+						margin: 0.7em 0;
+					}
 					font-size: 1.5rem;
-					margin: 0.7em 0;
+					margin: 0;
 				}
 
 				&.error {
 					.error-text {
 						visibility: visible;
+						margin: 0.7em 0;
+
 						&--margin {
 							margin: 1.6em 0;
 						}
@@ -124,12 +129,17 @@
 			border: none;
 			border-radius: 5px;
 			cursor: pointer;
-			transition: background-color 0.3s, color 0.3s;
+			transition: background-color 0.3s, color 0.3s, border 0.3s;
 			&:first-of-type {
 				margin-right: 1em;
 			}
 			&:hover {
 				background-color: $light-green;
+			}
+
+			&:focus {
+				outline: none;
+				background-color: rgb(56, 243, 32);
 			}
 		}
 
