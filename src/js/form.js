@@ -78,7 +78,7 @@ const checkMail = email => {
 }
 
 const checkErrors = () => {
-	const allFormBox = document.querySelectorAll('.contact__form-box')
+	const allFormBox = document.querySelectorAll('.contact__form-box, .contact__form-box--privacy')
 	let errorCount = 0
 
 	allFormBox.forEach(el => {
@@ -86,9 +86,10 @@ const checkErrors = () => {
 			errorCount++
 		}
 	})
-
+	console.log(errorCount);
 	if (errorCount === 0) {
 		popup.classList.add('show-popup')
+		document.body.style.overflow = 'hidden'
 	}
 }
 
