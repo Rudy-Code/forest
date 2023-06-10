@@ -35,7 +35,6 @@ Forest is the first site I have coded on my own. My task was to replicate the si
 
 ## Live
 
-- https://rudydev1.github.io/forest/
 - https://rudydev-forest.netlify.app/
 
 ## Special thanks to
