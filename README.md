@@ -73,8 +73,6 @@ I would like to express my sincere gratitude for your contribution and support t
   - Fixed bugs in contact page
   - Changed styles error text in contact page
 - 1.2.1
-  - Added animation in mobile nav
-- 1.2.2
   - Fixed bug validator inputs length form
   - Added Easter egg for my friend
 ## Credits
