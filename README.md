@@ -75,6 +75,9 @@ I would like to express my sincere gratitude for your contribution and support t
   - Changed styles error text in contact page
 - 1.2.1
   - Added animation in mobile nav
+- 1.2.2
+  - Fixed bug validator inputs length form
+  - Added Easter egg for my friend
 ## Credits
 
 The task to be completed and the mockup of the page is from the MMC SCHOOL course: [Kurs Tworzenia Stron WWW cz. 4](https://mmcschool.teachable.com/p/kurs-tworzenia-stron-www-cz-4)
