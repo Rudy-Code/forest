@@ -97,6 +97,7 @@ offersCards.forEach(card => {
 	card.addEventListener('mouseleave', () => handleOffers(offersCards[1]))
 })
 
+
 // ** animations on scroll - intersection observer
 
 const animationsElements = document.querySelectorAll('.animate-on-scroll, .animate-top-down, .animate-down-top')

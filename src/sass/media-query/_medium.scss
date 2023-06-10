@@ -132,6 +132,12 @@
 			}
 		}
 	}
+
+	.special {
+		&__text {
+			font-size: 2.2rem;
+		}
+	}
 }
 
 @media (min-widt: 930px) {
