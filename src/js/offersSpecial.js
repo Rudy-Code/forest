@@ -15,6 +15,6 @@ const close = () => {
 
 }
 
-offersBtnSpecial.addEventListener('click', open)
+offersBtnSpecial.addEventListener('dblclick', open)
 
 specialCloseBtn.addEventListener('click', close)
