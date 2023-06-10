@@ -10,14 +10,14 @@ const clearBtn = document.querySelector('#reset')
 const popup = document.querySelector('.popup')
 let allInput
 
+// ** form
+
 document.addEventListener('DOMContentLoaded', () => {
 	allInput = document.querySelectorAll('.contact__form input, .contact__form textarea')
 	allInput.forEach(el => {
 		handleLabelText(el)
 	})
 })
-
-// ** form
 
 const handleLabelText = e => {
 	e.value != '' ? e.classList.add('text') : e.classList.remove('text')
@@ -68,7 +68,7 @@ const checkForm = input => {
 }
 
 const checkLength = (input, min) => {
-	if (input.value.length < min) {
+	if (input.value.trim().length < min) {
 		showError(input, `${input.dataset.errorText} musi składa się z min. ${min} znaków`)
 	}
 }
