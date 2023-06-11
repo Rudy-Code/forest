@@ -8,6 +8,7 @@ const open = () => {
 	music.play()
 	popupSpecial.classList.add('show-special')
 	video.play()
+	document.body.style.overflow = 'hidden'
 }
 
 openBtn.addEventListener('click', open)
