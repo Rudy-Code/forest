@@ -8,6 +8,7 @@ body {
 	background-color: $black;
 	width: 100vw;
 	height: 100vh;
+	overflow: hidden;
 }
 
 .return {
@@ -21,16 +22,15 @@ body {
 
 .open-btn {
 	font-size: 2rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	background-color: transparent;
 	color: $white;
 	border: 2px solid $white;
 	cursor: pointer;
-	margin: 0 auto;
 	padding: 1em;
-	margin-top: 30%;
 	transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 	&:hover {
 		color: $black;
