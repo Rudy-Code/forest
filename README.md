@@ -76,6 +76,8 @@ I would like to express my sincere gratitude for your contribution and support t
   - Added Easter egg for my friend
 - 1.2.2
   - Added icon in footer
+- 1.2.3
+  - Changed special thanks page
 ## Credits
 
 The task to be completed and the mockup of the page is from the MMC SCHOOL course: [Kurs Tworzenia Stron WWW cz. 4](https://mmcschool.teachable.com/p/kurs-tworzenia-stron-www-cz-4)
