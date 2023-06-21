@@ -154,13 +154,15 @@
 			top: -100%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			width: 600px;
+			width: 90%;
 			height: 200px;
 			color: $black;
 			background-color: $white;
 			border-radius: 8px;
 			border: 2px solid black;
 			transition: top 0.5s;
+			text-align: center;
+			z-index: 9999999;
 
 			p {
 				font-size: 2.5rem;
